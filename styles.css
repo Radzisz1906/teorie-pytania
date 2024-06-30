@@ -7,15 +7,25 @@ body {
   font-family: Arial, sans-serif;
   background-color: #000; /* czarne tło */
   color: #fff; /* biała czcionka */
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 .container {
   text-align: center;
+  max-width: 100%;
 }
 
 h1 {
-  font-size: 3em; /* większa czcionka */
-  margin: 0 10%; /* trochę marginesu dla lepszej czytelności na mniejszych ekranach */
+  font-size: 2em; /* zmniejszenie czcionki dla lepszej czytelności na mniejszych ekranach */
+  margin: 0 5%; /* margines dla lepszej czytelności */
+  word-wrap: break-word; /* łamanie wyrazów */
+}
+
+p {
+  font-size: 1.5em;
+  margin: 20px 5%;
+  word-wrap: break-word; /* łamanie wyrazów */
 }
 
 button {
@@ -27,8 +37,20 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  max-width: 90%;
+  box-sizing: border-box;
 }
 
 button:hover {
   background-color: #555; /* jaśniejszy kolor przy najechaniu myszką */
+}
+
+@media (min-width: 600px) {
+  h1 {
+      font-size: 3em; /* większa czcionka dla większych ekranów */
+  }
+
+  p {
+      font-size: 2em; /* większa czcionka dla większych ekranów */
+  }
 }
