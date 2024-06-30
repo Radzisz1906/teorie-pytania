@@ -17,3 +17,18 @@ h1 {
   font-size: 3em; /* większa czcionka */
   margin: 0 10%; /* trochę marginesu dla lepszej czytelności na mniejszych ekranach */
 }
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #444; /* ciemny przycisk */
+  color: #fff; /* biała czcionka na przycisku */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555; /* jaśniejszy kolor przy najechaniu myszką */
+}
